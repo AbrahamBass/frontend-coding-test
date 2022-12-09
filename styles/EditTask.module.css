@@ -89,6 +89,18 @@
   }
 }
 
+.btnCompleted {
+  padding: 10px;
+  margin: 3px 0px;
+  font-family: 'Inter', sans-serif;
+}
+
+.parrafoCompleted {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  padding: 5px 0px;
+}
+
 @media (max-width: 500px) {
   .section {
     padding: 20px 40px;

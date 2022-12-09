@@ -13,6 +13,11 @@ export default function TasksEdit ({user, data})  {
   const [title, setTitle] = useState('')
    //el estado description guarda el valor del input description
   const [description, setDescription] = useState('')
+  // el estado completed verifica si la tarea esta completada o no
+  const [completed, setCompleted] = useState(false)
+  //el estado endDate verifica el estado  de finalizacion de la tarea
+  const [enDate, setEnDate] = useState('')
+
 
   //esta funcion guarda el valor del input al estado
   const HandleChangeTitle = (e) => {
@@ -22,6 +27,10 @@ export default function TasksEdit ({user, data})  {
   //esta funcion guarda el valor del input al estado
   const HandleChangeDescription = (e) => {
     setDescription(e.target.value)
+  }
+
+  const HandleChangeEndate = (e) => {
+    setEnDate(e.target.value)
   }
 
   // Esta function actualiza los valores de la tarea
@@ -44,9 +53,9 @@ export default function TasksEdit ({user, data})  {
             id: data.id,
             title: title,
             description: description,
-            completed: false,
-            startDate: data.startDate,
-            endDate: fechaEnd,
+            completed: completed,
+            startDate: fechaEnd,
+            endDate: enDate,
             personId: data.personId
             })
           })
@@ -61,6 +70,11 @@ export default function TasksEdit ({user, data})  {
   //Esta funcion redirige al perfil del usuario
   const rout = () => {
     router.push(`/profile/${user.id}`)
+  }
+
+  //Esta function cambia el estado de la tarea
+  const HandleClickCompleted = () => {
+    setCompleted(!completed)
   }
 
   return (
@@ -117,7 +131,19 @@ export default function TasksEdit ({user, data})  {
               className={styles.input} 
               onChange={HandleChangeDescription}/>
             </div>
+            <div className={styles.divInput}>
+              <label className={styles.label}>Task endDate</label>
+              <input 
+              type="text" 
+              placeholder='Description'
+              className={styles.input} 
+              onChange={HandleChangeEndate}/>
+            </div>
           </div>
+            <div>
+              <p className={styles.parrafoCompleted}>completed or not completed</p>
+              <button type='button' onClick={HandleClickCompleted} className={styles.btnCompleted}>completed or not completed</button>
+            </div>
           <div className={styles.divBtn}>
             <input type="submit" className={styles.btn} value='Send'/>
             <button type='button' onClick={rout} className={styles.btn}>Cancel</button>
