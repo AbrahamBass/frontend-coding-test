@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display:wght@500&family=Source+Sans+Pro&family=Space+Grotesk&display=swap');
+
+.sectUser {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+  display: flex;
+}
+
+.sectTasks {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+  width: 100%;
+}
+
+.name {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.parrafo {
+  font-family: 'Inter', sans-serif;
+}
+
+
+.tituloTh {
+  padding: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: rgba(211, 211, 211, 0.527);
+}
+
+.tituloTd {
+  font-family: 'Inter', sans-serif;
+  padding: 10px;
+}
+
+.btnOne {
+  width: 200px;
+  padding: 5px;
+  font-family: 'Inter', sans-serif;
+}
+
+.btnTwo {
+  padding: 5px;
+  font-family: 'Inter', sans-serif;
+}
+
+.btnDelete {
+  padding: 5px;
+}
+
+.tbody {
+  text-align: center;
+}
+
+.headerNav {
+  padding: 10px;
+  display: flex;
+  background-color: #FFB800;
+  align-items: center;
+}
+
+.tituloNav {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+@media (max-width: 885px) {
+
+  .sectUser {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 50px;
+  }
+
+  .sectTasks {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 50px;
+    width: 100%;
+  }
+
+  .divThead {
+    display: none;
+  }
+
+  .tableTr {
+    display: block;
+  }
+
+  .tituloTd {
+    display: block;
+    text-align: right;
+    border: 1px solid rgb(230, 230, 230);
+  }
+
+
+  .tituloTd::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: 600;
+  }
+
+  .btnOne {
+    width: 100px;
+  }
+
+
+}
+
+
+@media (max-width: 500px) {
+  .sectUser {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 50px;
+  }
+
+  .sectTasks {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 50px;
+    width: 100%;
+  }
+}
+
+

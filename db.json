@@ -96,7 +96,7 @@
       "id": 1,
       "title": "Task 1",
       "description": "This is the first task on the list.",
-      "completed": false,
+      "completed": true,
       "startDate": "2022-12-04",
       "endDate": null,
       "personId": 1
@@ -105,7 +105,7 @@
       "id": 2,
       "title": "Task 2",
       "description": "This is the second task on the list.",
-      "completed": true,
+      "completed": false,
       "startDate": "2022-12-04",
       "endDate": "2022-12-05",
       "personId": 2
@@ -123,7 +123,7 @@
       "id": 4,
       "title": "Task 4",
       "description": "This is the fourth task on the list.",
-      "completed": true,
+      "completed": false,
       "startDate": "2022-12-04",
       "endDate": "2022-12-06",
       "personId": 4
@@ -132,7 +132,7 @@
       "id": 5,
       "title": "Task 5",
       "description": "This is the fifth task on the list.",
-      "completed": false,
+      "completed": true,
       "startDate": "2022-12-04",
       "endDate": null,
       "personId": 5
@@ -159,7 +159,7 @@
       "id": 8,
       "title": "Task 8",
       "description": "This is the eighth task on the list.",
-      "completed": true,
+      "completed": false,
       "startDate": "2022-12-04",
       "endDate": "2022-12-08",
       "personId": 8
@@ -203,7 +203,7 @@
       "id": 13,
       "title": "Task 13",
       "description": "This is the thirteenth task on the list.",
-      "completed": false,
+      "completed": true,
       "startDate": "2022-12-04",
       "endDate": null,
       "personId": 3
@@ -221,7 +221,7 @@
       "id": 15,
       "title": "Task 15",
       "description": "This is the fifteenth task on the list.",
-      "completed": false,
+      "completed": true,
       "startDate": "2022-12-04",
       "endDate": null,
       "personId": 5
@@ -230,7 +230,7 @@
       "id": 16,
       "title": "Task 16",
       "description": "This is the sixteenth task on the list.",
-      "completed": false,
+      "completed": true,
       "startDate": "2022-12-04",
       "endDate": null,
       "personId": 6

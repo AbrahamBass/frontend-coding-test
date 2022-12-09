@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display:wght@500&family=Source+Sans+Pro&family=Space+Grotesk&display=swap');
+
+.divNavegacion {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background-color:#FFB800;
+}
+
+.conteiner {
+  /* background-color: black; */
+  width: 100%;
+  height: 100vh;
+}
+
+.links {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+
+.divPeoples {
+  padding: 20px 100px;
+  width: 100%;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tableTr {
+  text-align: center;
+}
+
+.tableTr:hover {
+  background-color: rgba(207, 207, 207, 0.719);
+  cursor: pointer;
+}
+
+.tableTr {
+  text-align: center;
+}
+
+.headTable {
+  padding: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+}
+
+.bodyTable {
+  padding: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 17px;
+}
+
+.img {
+  padding: 10px;
+  border-radius: 25px;
+}
+
+@media  (max-width: 885px) {
+
+  .divPeoples {
+    padding: 20px 70px;
+    width: 100%;
+  }
+  
+
+  .divThead {
+    display: none;
+  }
+
+  .tableTr {
+    display: block;
+  }
+
+  .bodyTable {
+    display: block;
+    text-align: right;
+    border: 1px solid rgb(230, 230, 230);
+  }
+
+
+  .bodyTable::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: 600;
+  }
+
+
+}
+
+@media (max-width: 500px) {
+  .divPeoples {
+    padding: 20px 40px;
+    width: 100%;
+  }
+
+}
+
+
+

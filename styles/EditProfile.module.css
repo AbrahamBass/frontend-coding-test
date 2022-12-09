@@ -1,0 +1,94 @@
+.user {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 20px;
+  display: flex;
+}
+
+.form {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 20px;
+}
+
+.divInput {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.label {
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 5px;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.input {
+  padding: 10px;
+  font-family: 'Inter', sans-serif;
+}
+
+.name {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.parrafo {
+  font-family: 'Inter', sans-serif;
+}
+
+.divBtn {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 5px;
+  width: 100px;
+}
+
+.divNavegacion {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background-color:#FFB800;
+}
+
+.links {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+@media (max-width: 885px) {
+  .user {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+  }
+
+  .form {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .user {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+  }
+
+  .form {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+  }
+}

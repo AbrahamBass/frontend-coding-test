@@ -1,0 +1,159 @@
+.headerNav {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background-color:#FFB800;
+}
+
+.tituloNav {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.divPeoples {
+  padding: 20px 100px;
+  width: 100%;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tableTr {
+  text-align: center;
+}
+
+.headTable {
+  padding: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+}
+
+.tableTrd {
+  text-align: center;
+}
+
+.tableTr:hover {
+  background-color: rgba(207, 207, 207, 0.719);
+  cursor: pointer;
+}
+
+.img {
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.bodyTable {
+  padding: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 17px;
+}
+
+.sectForm {
+  padding: 20px 100px;
+  width: 100%;
+}
+
+.divInput {
+  display: grid; 
+   max-width: 500px;
+}
+
+.label {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  padding: 10px 0px;
+}
+
+.input {
+  padding: 10px;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+}
+
+.divBtn {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 5px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.tituloStatus {
+  position: fixed;
+  bottom: 40px;
+  left: 600px;
+  padding: 10px;
+  background-color: rgb(13, 182, 13);
+  border-radius: 3px;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.divUserName {
+  padding: 0px 100px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+}
+
+@media (max-width: 885px) {
+  .divPeoples {
+    padding: 20px 70px;
+    width: 100%;
+  }
+
+  .divUserName {
+    padding: 0px 70px;
+  }
+
+  .sectForm {
+    padding: 20px 70px;
+  }
+
+  .divThead {
+    display: none;
+  }
+
+  .tableTr {
+    display: block;
+  }
+
+  .bodyTable {
+    display: block;
+    text-align: right;
+    border: 1px solid rgb(230, 230, 230);
+  }
+
+
+  .bodyTable::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: 600;
+  }
+
+  .nameClick {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .divPeoples {
+    padding: 20px 40px;
+    width: 100%;
+  }
+
+  .divUserName {
+    padding: 0px 40px;
+  }
+
+  .sectForm {
+    padding: 20px 40px;
+  }
+}
